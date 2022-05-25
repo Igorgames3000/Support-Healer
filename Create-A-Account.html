@@ -1,123 +1,99 @@
 <!DOCTYPE html>
 <html lang="br">
   <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial=scale=1">
-        <title>Criar Conta</title> 
-        <!--<div style="height: 767px; background-color: rgb(197, 14, 14);">-->         
-  </head>   
- <body>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial=scale=1">
+  <title>Criar Conta</title> 
+  <!--<div style="height: 767px; background-color: rgb(197, 14, 14);">-->         
+</head>   
+<body>
 <!--Foto Do Perfil-->
 <form>
-    <div class="form-group d-grid gap-2 col-6 mx-auto">
-          <div class="container col-md-6">
-                <div class="mb-5">
-                    <input class="form-control" type="file" id="formFile" onchange="preview()">
-                </div>
-                <img id="frame" src="assets/images/RegisterImage.svg" class="img-thumbnail img-fluid rounded-circle w-100" />
-            </div>
-    
-            <script>
-                function preview() {
-                    frame.src = URL.createObjectURL(event.target.files[0]);
-                }
-                function clearImage() {
-                    document.getElementById('formFile').value = null;
-                    frame.src = "";
-                }
+  <div class="form-group d-grid gap-2 col-6 mx-auto">
+  <div class="container col-md-6">
+  <div class="mb-5">
+  <input class="form-control" type="file" id="formFile" onchange="preview()">
+</div>
+  <img id="frame" src="assets/images/RegisterImage.svg" class="img-thumbnail img-fluid rounded-circle w-100" />
+</div>
+
+<script>
+  function preview() {  
+  frame.src = URL.createObjectURL(event.target.files[0]);
+}
+  function clearImage() {
+  document.getElementById('formFile').value = null;
+  frame.src = "";
+}
 </script>
 </div>
 </form>
 <form>
-    <form class="px-md-2">
+<form class="px-md-2">
 
-        <div class="form-outline mb-4">
-          <input type="text" id="form3Example1q" class="form-control" />
-          <label class="form-label" for="form3Example1q">Nome</label>
-        </div>
+  <div class="form-outline mb-4">
+  <input type="text" id="form3Example1q" class="form-control" />
+  <label class="form-label" for="form3Example1q">Nome</label>
+</div>
 
-        <div class="row">
-          <div class="col-md-6 mb-4">
+  <div class="row">
+  <div class="col-md-6 mb-4">
 
-            <div class="form-outline mb-4">
-                <input type="text" id="form3Example1q" class="form-control" />
-                <label class="form-label" for="form3Example1q">Data De Nascimento</label>
-              </div>
-          </div>
-          <form class="px-md-2">
-          <div class="col-md-6 mb-4">
-            <div class="form-outline mb-4">
-                <input type="text" id="form3Example1q" class="form-control" />
-                <label class="form-label" for="form3Example1q">Area</label>
-              </div>
-              </div>
-              <form class="px-md-2">
-                <div class="col-md-6 mb-4">
-                  <div class="form-outline mb-4">
-                      <input type="text" id="form3Example1q" class="form-control" />
-                      <label class="form-label" for="form3Example1q">Local De Trabalho</label>
-                    </div>
-            </div>
-            <div class="col-md-6 mb-4">
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Grupo Sangíneo</option>
-                <option value="1">A+</option>
-                <option value="2">A-</option>
-                <option value="3">B+</option>
-                <option value="4">B-</option> 
-                <option value="5">AB+</option> 
-                <option value="6">AB-</option> 
-                <option value="7">O+</option> 
-                <option value="8">O-</option>               
-              </select>
-                
-                </div>
-                <form class="px-md-2">
-                    <div class="col-md-6 mb-4">
-                        <div class="form-outline mb-4">
-                            <input type="phonenumber" id="form3Example1q" class="form-control" />
-                            <label class="form-label" for="form3Example1q">Numero De Telefone</label>
-                        </div>
-                    </div>
-                        <form class="px-md-2">
-                            <div class="col-md-6 mb-4">
-                                <div class="form-outline mb-4">
-                                    <input type="email" id="form3Example1q" class="form-control" />
-                                    <label class="form-label" for="form3Example1q">E-mail</label>  
-                                    <div class="mt-4 pt-2">
-                               <!--Botão-->     
-                               <a class="btn btn-primary" href="Account-Created.html" role="button">Criar Conta</a>
-                                </div>
-                                    
-        </div>
-  </div>
+  <div class="form-outline mb-4">
+  <input type="text" id="form3Example1q" class="form-control" />
+  <label class="form-label" for="form3Example1q">Data De Nascimento</label>
+</div>
+</div>
+  <form class="px-md-2">
+  <div class="col-md-6 mb-4">
+  <div class="form-outline mb-4">
+  <input type="text" id="form3Example1q" class="form-control" />
+  <label class="form-label" for="form3Example1q">Area</label>
+</div>
+</div>
+  <form class="px-md-2">
+  <div class="col-md-6 mb-4">
+  <div class="form-outline mb-4">
+  <input type="text" id="form3Example1q" class="form-control" />
+  <label class="form-label" for="form3Example1q">Local De Trabalho</label>
+</div>
+</div>
+  <div class="col-md-6 mb-4">
+  <select class="form-select" aria-label="Default select example">
+  <option selected>Grupo Sangíneo</option>
+  <option value="1">A+</option>
+  <option value="2">A-</option>
+  <option value="3">B+</option>
+  <option value="4">B-</option> 
+  <option value="5">AB+</option> 
+  <option value="6">AB-</option> 
+  <option value="7">O+</option> 
+  <option value="8">O-</option>               
+</select>
 
+</div>
+<form class="px-md-2">
+  <div class="col-md-6 mb-4">
+  <div class="form-outline mb-4">
+  <input type="phonenumber" id="form3Example1q" class="form-control"/>
+  <label class="form-label" for="form3Example1q">Numero De Telefone</label>
+</div>
+</div>
+  <form class="px-md-2">
+  <div class="col-md-6 mb-4">
+  <div class="form-outline mb-4">
+  <input type="email" id="form3Example1q" class="form-control" />
+  <label class="form-label" for="form3Example1q">E-mail</label>  
+  <div class="mt-4 pt-2">
+</div>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!--Botão-->     
+</div>
+  <div class="d-grid gap-2"> 
+  <a class="btn ud-main-btn ud-white-btn" href="Account-Created.html" role="button">Criar Conta</a>
+</div>
+</div>
 
 <!--Bootsrap-->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
