@@ -38,7 +38,19 @@
      
       <div class="form-group">
       <label for="pwd"></label>
-      <input type="password" class="form-control" id="pwd" placeholder="Senha">
+      <input type="password" class="form-control" id="myInput" placeholder="Senha"/>
+      <input type="checkbox" onclick="myFunction()">Mostra Senha
+    </div>
+    <script>
+      function myFunction() {
+      var x = document.getElementById("myInput");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    } 
+    </script>
       <div class="row justify-content-center position-absolute top-50 start-50">      
       </div>
       </div>
@@ -47,9 +59,9 @@
      
       <!--Botoes bem maneiros-->        
       <div class="d-grid gap-2"> 
-        <a href="Home-Page.html" target="_blank" type="submit" class="btn ud-main-btn ud-white-btn">Login</button>
-        <a href="Forgot-your-passoword.html" target="_blank" class="btn ud-main-btn ud-white-btn">Esqueceu a Senha?</button>    
-        <a href="Create-A-Account.html" target="_blank" type="submit" class="btn ud-main-btn ud-white-btn">Criar Conta</button>   
+        <a href="Home-Page.html" class="btn ud-main-btn ud-white-btn">Login</a>
+        <a class="btn ud-main-btn ud-white-btn" href="Forgot-your-passoword.html" role="button">Esqueceu a Senha?</a>    
+        <a class="btn ud-main-btn ud-white-btn" href="Create-A-Account.html" role="button">Criar Conta</a>
         <!--<a href="./Home-Page.html" target="_blank" class="btn ud-main-btn ud-white-btn">Login</button>-->   
     </div>      
 </body>
